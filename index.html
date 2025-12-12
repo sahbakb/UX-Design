@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Taniti - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+        background-image: url("images/island.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+
+    /* Optional dark overlay for better text contrast */
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Visit Taniti</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                <li class="nav-item"><a class="nav-link" href="stay.html">Stay</a></li>
+                <li class="nav-item"><a class="nav-link" href="transportation.html">Transportation</a></li>
+                <li class="nav-item"><a class="nav-link active" href="faq.html">FAQs</a></li>
+                
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-content">
+        <h1 class="display-4 fw-bold">Discover Beautiful Taniti</h1>
+        <p class="lead">Beaches, rainforests, volcanoes — adventure awaits.</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">
+            Plan Your Trip
+        </a>
+    </div>
+</header>
+
+
+<!-- ACTIVITIES SECTION -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Top Activities</h2>
+
+        <div class="row g-4">
+            <!-- Activity Card 1 -->
+            <div class="col-md-3">
+                <div class="card activity-card">
+                    <img src="images/Beach.png" alt="Beaches" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beaches</h5>
+                        <p class="card-text">Relax on white sand beaches around Yellow Leaf Bay.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="col-md-3">
+                <div class="card activity-card">
+                    <img src="images/Vocano.png" alt="Volcano Tours" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Volcano Tours</h5>
+                        <p class="card-text">Explore Taniti’s active volcano up close.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="col-md-3">
+                <div class="card activity-card">
+                    <img src="images/Hiking.png" alt="Rainforest Hikes" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Rainforest Hikes</h5>
+                        <p class="card-text">Walk through lush tropical trails.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 4 -->
+            <div class="col-md-3">
+                <div class="card activity-card">
+                    <img src="images/Snorkeling.png" alt="Snorkeling" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Snorkeling</h5>
+                        <p class="card-text">Discover vibrant marine life in clear waters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="activities.html" class="btn btn-outline-primary">See All Activities</a>
+        </div>
+    </div>
+</section>
+
+<!-- LODGING SECTION -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Where to Stay</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card lodging-card">
+                    <img src="images/Hotel.png" class="card-img-top" alt="Hotels">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotels & Resorts</h5>
+                        <p>Choose from family hotels to luxurious four-star resorts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card lodging-card">
+                    <img src="images/Bed and Breakfast.png" class="card-img-top" alt="Bed and Breakfasts">
+                    <div class="card-body">
+                        <h5 class="card-title">Bed & Breakfasts</h5>
+                        <p>Cozy, local, family-owned lodging options.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card lodging-card">
+                    <img src="images/Hostel.png" class="card-img-top" alt="Hostels">
+                    <div class="card-body">
+                        <h5 class="card-title">Hostels</h5>
+                        <p>A budget-friendly stay for backpackers and solo travelers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="stay.html" class="btn btn-outline-primary">Find Lodging</a>
+        </div>
+    </div>
+</section>
+
+<!-- TRANSPORTATION SECTION -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Getting Around Taniti</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-3">
+                <h5>Public Buses</h5>
+                <p>5 a.m. – 11 p.m. daily</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Rental Cars</h5>
+                <p>Near the airport, easy to book</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Taxis</h5>
+                <p>Available in Taniti City</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Bikes</h5>
+                <p>Great for exploring Merriton Landing</p>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="transportation.html" class="btn btn-outline-primary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT THE ISLAND SECTION -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About the Island</h2>
+        <p class="lead text-center">
+            Taniti is a small, tropical island with beaches, rainforests, a safe harbor, 
+            local architecture, and a vibrant culture. Visitors enjoy relaxing shores, 
+            outdoor adventures, and a growing range of entertainment options.
+        </p>
+        <div class="text-center mt-4">
+            <a href="about.html" class="btn btn-outline-secondary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+    <p>© 2025 Taniti Tourism Board</p>
+    <p>
+        <a href="#" class="text-white text-decoration-none">FAQ</a> |
+        <a href="#" class="text-white text-decoration-none">Safety Tips</a> |
+        <a href="#" class="text-white text-decoration-none">Holiday Closures</a>
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
